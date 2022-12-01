@@ -1,4 +1,4 @@
-.knockouts{
+.knockouts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,7 +6,7 @@
   margin-bottom: 80px;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: center;
 
@@ -14,96 +14,100 @@
     width: 64px;
     height: 64px;
   }
+
   :nth-child(4) .flag, :nth-child(8) .flag {
     width: 80px;
     height: 80px;
   }
+
   :nth-child(6) .flag {
     width: 100px;
     height: 100px;
   }
 }
 
-.cell{
+.cell {
   width: 80px;
   height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  font-family: 'Nunito';
+  color: #FFF;
+  font-weight: 500;
+  font-size: 24px;
 
-
-  :only-child{
+  :only-child {
     background-size: cover;
     background-position: center;
     width: 44px;
     height: 44px;
     border-radius: 8px;
     position: absolute;
-    filter: drop-shadow(0px, 3px 6px rgba(0,0,0.25));
+    filter: drop-shadow(0px, 3px, 6px rgba(0,0,0.25));
   }
-
 }
 
-.hide{
+.hide {
   visibility: hidden;
 }
 
-.right{
+.right {
   right: 40px;
   border-right: 3px solid;
   border-top: 3px solid;
 }
 
-.left{
+.left {
   left: 40px;
   border-left: 3px solid;
   border-top: 3px solid;
 }
 
-.top{
+.top {
   bottom: 17px;
   border-bottom: 3px solid;
   border-top: none;
 }
 
-.bottom{
+.bottom {
   bottom: -14px;
 }
 
-.bar{
+.bar {
   box-sizing: content-box;
   border-radius: 0px;
-  border-color: #aaaaaa;
+  border-color: #AAAAAA;
   position: relative;
   z-index: -1;
   background: none;
 }
 
-.v-bar{
+.v-bar {
   width: 80px;
   height: 36px;
   border-radius: 0px;
-  border-right: 3px solid #aaaaaa;
+  border-right: 3px solid #AAAAAA;
   position: relative;
   right: 40px;
   z-index: -1;
 }
 
-.h-bar{
+.h-bar {
   border-radius: 0px;
-  border-bottom: 3px solid #aaaaaa;
+  border-bottom: 3px solid #AAAAAA;
   position: relative;
   bottom: 14px;
   z-index: -1;
 }
 
-.flag{
-  background-color: white;
+.flag {
+  background-color: #FFF;
 }
 
-.trofeu{
+.trofeu {
   width: 100px !important;
   height: 100px !important;
-  background-image: url('https://github.com/Code-Yourself-Oficial/world-cup-simulator-files/blob/main/trofeu.svg');
+  background-image: url('https://raw.githubusercontent.com/Code-Yourself-Oficial/world-cup-simulator-files/main/trofeu.svg');
 }
